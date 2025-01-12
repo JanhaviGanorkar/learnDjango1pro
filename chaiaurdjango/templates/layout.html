@@ -1,0 +1,37 @@
+{% load static tailwind_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block tittle %}
+        Default Value
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    {% tailwind_css %}
+</head>
+<body>
+    
+    {% comment %} <div class="h-screen bg-red-500 text-white w-64 flex flex-row"> {% endcomment %}
+        <!-- Logo -->
+        {% comment %} <div class="p-4 text-2xl font-bold border-b border-teal-400">
+            MyWebsite
+        </div> {% endcomment %}
+        <!-- Navigation Links -->
+        <nav class="flex flex-row bg-gray-900">
+            <a href="#" class="block px-4 py-2 hover:bg-teal-600">My Website</a>
+            <a href="{% url 'all_chai' %}" class="block px-4 py-2 hover:bg-teal-600">Home</a>
+            <a href="#" class="block px-4 py-2 hover:bg-teal-600">About</a>
+            <a href="#" class="block px-4 py-2 hover:bg-teal-600">Services</a>
+            <a href="#" class="block px-4 py-2 hover:bg-teal-600">Contact</a>
+            <a href="#" class="block px-4 py-2 hover:text-teal-300">Settings</a>
+        </nav>
+        <!-- Footer (Optional) -->
+       
+    {% comment %} </div>     {% endcomment %}
+    {% block content %}{% endblock %}
+</body>
+</html>

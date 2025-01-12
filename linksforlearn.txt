@@ -1,0 +1,6 @@
+https://docs.google.com/presentation/d/1aCDZ08dlIh4DGsIawYPBJrBD_qMTZYedch6XcdRm7X8/mobilepresent?slide=id.g16af29be695_0_862
+
+
+https://docs.chaicode.com/getting-started-with-django/
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
